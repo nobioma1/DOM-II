@@ -33,8 +33,12 @@ document.addEventListener('scroll', () => {
   header.classList.toggle('changeColor');
 })
 
-// select
 // wheel`
+document.addEventListener('wheel', () => {
+  TweenMax.to('.content-section img', 1, { scale: 0.8, ease: Back.easeInOut });
+})
+
+// select
 // drag / drop`
 // focus`
 // resize`
