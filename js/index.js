@@ -38,10 +38,17 @@ document.addEventListener('wheel', () => {
   TweenMax.to('.content-section img', 1, { scale: 0.8, ease: Back.easeInOut });
 })
 
+// copy
+document.addEventListener('copy', () => {
+  const selection = document.getSelection().toString();
+  alert(`You copied ${selection.toUpperCase()}`);
+});
+
 // select
 // drag / drop`
 // focus`
-// resize`
+
+// Nest two similar events and prevent the event propagation
 
 // stop navigation from refreshing the page
 const nav = document.querySelectorAll('nav');
