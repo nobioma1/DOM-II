@@ -17,9 +17,15 @@ headerImage.addEventListener('mouseover', () => {
 
 // dblclick 
 const contentImages = document.querySelectorAll('.content-section img');
-contentImages.forEach(imag => imag.addEventListener('dblclick', (event) => {
+contentImages.forEach(imag => imag.addEventListener('dblclick', () => {
   imag.classList.toggle('hide');
 }))
+
+// keydown
+const pTags = document.querySelectorAll('p');
+document.addEventListener('keydown', () => {
+  pTags.forEach(pTag => pTag.classList.toggle('hide'));
+});
 
 // select
 // wheel`
@@ -27,7 +33,6 @@ contentImages.forEach(imag => imag.addEventListener('dblclick', (event) => {
 // focus`
 // resize`
 // scroll`
-// keydown
 
 // stop navigation from refreshing the page
 const nav = document.querySelectorAll('nav');
