@@ -136,6 +136,11 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+html .changeColor,
+body .changeColor {
+  background-color: lightgray;
+  color: white;
+}
 h1,
 h2,
 h3,

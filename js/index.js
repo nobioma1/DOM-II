@@ -27,12 +27,17 @@ document.addEventListener('keydown', () => {
   pTags.forEach(pTag => pTag.classList.toggle('hide'));
 });
 
+// scroll`
+const header = document.querySelector('.main-navigation');
+document.addEventListener('scroll', () => {
+  header.classList.toggle('changeColor');
+})
+
 // select
 // wheel`
 // drag / drop`
 // focus`
 // resize`
-// scroll`
 
 // stop navigation from refreshing the page
 const nav = document.querySelectorAll('nav');
