@@ -38,7 +38,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 	* [ ] `keydown`
 	* [ ] `wheel`
 	* [ ] `drag / drop`
-	* [ ] `load`
+	* [x] `load`
 	* [ ] `focus`
 	* [ ] `resize`
 	* [ ] `scroll`
@@ -52,7 +52,7 @@ Using the 10 unique events, find ways to update the DOM in creative ways. For ex
 
 ## Stretch Task:
 
-* [ ] Go look at [GSAP](https://greensock.com/) and implement the animations found in that library with your custom events.
+* [x] Go look at [GSAP](https://greensock.com/) and implement the animations found in that library with your custom events.
 
 ## Stretch assignment
 
