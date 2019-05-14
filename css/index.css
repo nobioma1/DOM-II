@@ -357,3 +357,7 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.home .hide {
+  opacity: 0;
+  transition: 4s ease-in-out;
+}

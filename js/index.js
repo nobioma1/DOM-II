@@ -12,7 +12,19 @@ window.addEventListener('load', () => {
 // mouseover
 const headerImage = document.querySelector('.intro img');
 headerImage.addEventListener('mouseover', () => {
-  TweenMax.from('.intro img', 2, { rotationY: 180, ease: Back.easeOut });
+  TweenMax.from('.intro img', 2, { rotationY: -180, ease: Back.easeOut });
 });
 
+// dblclick 
+const contentImages = document.querySelectorAll('.content-section img');
+contentImages.forEach(imag => imag.addEventListener('dblclick', (event) => {
+  imag.classList.toggle('hide');
+}))
 
+// wheel`
+// drag / drop`
+// focus`
+// resize`
+// scroll`
+// select`
+// keydown
