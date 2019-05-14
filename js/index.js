@@ -21,10 +21,16 @@ contentImages.forEach(imag => imag.addEventListener('dblclick', (event) => {
   imag.classList.toggle('hide');
 }))
 
+// select
 // wheel`
 // drag / drop`
 // focus`
 // resize`
 // scroll`
-// select`
 // keydown
+
+// stop navigation from refreshing the page
+const nav = document.querySelectorAll('nav');
+nav.forEach(link => link.addEventListener('click', (event) => {
+  event.preventDefault();
+}))
