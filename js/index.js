@@ -60,9 +60,15 @@ window.addEventListener('resize', (event) => {
 // focus`
 
 // Nest two similar events and prevent the event propagation
-const navLinks = document.querySelectorAll('nav');
-navLinks.forEach(nav => nav.addEventListener('click', () => {
-  console.log('here')
+const destinationSection = document.querySelectorAll('.destination');
+destination.forEach(section => section.addEventListener('mouseover', () => {
+  console.log('Hover Over Section')
+}))
+
+const destinationBtn = document.querySelectorAll('.destination .btn');
+destinationBtn.forEach(btn => btn.addEventListener('mouseover', (event) => {
+  event.stopPropagation();
+  console.log('Hover Over Button')
 }))
 
 // stop navigation from refreshing the page
