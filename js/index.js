@@ -44,11 +44,26 @@ document.addEventListener('copy', () => {
   alert(`You copied ${selection.toUpperCase()}`);
 });
 
-// select
-// drag / drop`
+// resize
+const intro = document.querySelector('.intro')
+const introImg = document.querySelector('.intro img')
+
+window.addEventListener('resize', (event) => {
+  if (event.target.innerWidth <= 500) {
+    intro.removeChild(introImg);
+  } else {
+    intro.prepend(introImg);
+  }
+})
+
+// drag / drop
 // focus`
 
 // Nest two similar events and prevent the event propagation
+const navLinks = document.querySelectorAll('nav');
+navLinks.forEach(nav => nav.addEventListener('click', () => {
+  console.log('here')
+}))
 
 // stop navigation from refreshing the page
 const nav = document.querySelectorAll('nav');
